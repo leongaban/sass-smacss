@@ -4,7 +4,7 @@ Master Stylesheet
 
 stylesheets/
 |-- vendors/
-|   |-- _reset       	    	# Eric Meyer's reset v2.0.0
+|   |-- reset       	    	# Eric Meyer's reset v2.0.0
 |
 |-- modules/            	    # Partials
 |   |-- _base           	    # Imports all the modules
@@ -27,7 +27,7 @@ stylesheets/
 |   |-- _queries				# Reponsive media queries
 |
 |-- vendors/
-|   |-- _normalize      	    # Nicolas Gallagher v3.0.2
+|   |-- normalize      	    	# Nicolas Gallagher v3.0.2
 |   ...
 |
 `-- main_web				    # Primary Sass module

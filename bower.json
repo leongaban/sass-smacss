@@ -1,6 +1,6 @@
 {
   "name": "sass-smacss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SMACSS based SASS modules for organized style writing.",
   "homepage": "https://github.com/leongaban/sass-smacss",
   "main": "sass/main_web.scss",
