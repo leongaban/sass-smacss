@@ -5,6 +5,7 @@ https://smacss.com/
 ![Jack](https://raw.githubusercontent.com/leongaban/github_images/master/sass-smacss-logo.png)
 
 SMACSS is a style guide for writing and organizing SASS modules.
+-----
 
 `sass > main_web.scss`
 
@@ -57,7 +58,7 @@ stylesheets/
 @import "modules/queries";		// Media Queries
 ```
 
-<strong>After the normalize and reset modules, the base module imports the mixins, colors and other settings:</strong>
+<strong>Next are the normalize and reset modules. Base module imports the mixins, colors and other less frequently updated settings/modules:</strong>
 
 ```
 @import "mixins";
@@ -66,7 +67,7 @@ stylesheets/
 @import "animation";
 ```
 
-<strong>defaults is where all main non-custom elements are set:</strong>
+<strong>Defaults.scss is where all main non-custom elements are set:</strong>
 
 ```
 /* Start of styles | Defaults
@@ -89,8 +90,8 @@ body {
 
 <strong>Then modules such as inputs, tables, buttons etc should follow:</strong>
 ```
-@import "modules/inputs";		// Inputs & Selects
-@import "modules/buttons";		// Buttons
+@import "modules/inputs";	// Inputs & Selects
+@import "modules/buttons";	// Buttons
 ```
 
 <strong>Next comes the layout module which starts importing your layouts:</strong>
@@ -119,26 +120,24 @@ body {
 etc...) set the height width and other properties.</strong>
 
 ```
-// Profile
+// Profile | profile.scss
 .green_phone_icon,
-.green_admin_panel,
 .remove_info,
-.remove_group,
-.profile_contact_select .dropdown_arrow,
+.dropdown_arrow,
 
-// Reports
+// Reports | reports.scss
 .check_green,
 .check_red,
 .css-label,
 
-// Errors
+// Errors | alerts.scss
 .lost_man {
 	background-size: 1600px 1600px;
 	background-image: url(/static/img/dashboard/icons.svg), none;
 }
 ```
 
-<strong>Example profile layout:</strong>
+<strong>Example class using the SVG background image in an example profile.scss layout module:</strong>
 ```
 .green_phone_icon {
 	float: left;
@@ -147,5 +146,4 @@ etc...) set the height width and other properties.</strong>
 	margin: 5px 10px;
 	background-position: -50px -150px;
 }
-
 ```
