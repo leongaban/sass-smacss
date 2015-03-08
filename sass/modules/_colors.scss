@@ -1,13 +1,18 @@
-/* COLORS
+/* Colors module
 ====================================================
 ==================================================== */
 
-$body: #fff;
-$blue: #024562;
-$green: #249B7A;
-$orange: #FC913A;
-$red: #F25A43;
-$facebook: #438acb;
-$twitter: #5cbde9;
+// Primary
+$blue: 			#024562;
+$green: 		#249B7A;
+$orange: 		#FC913A;
+$red: 			#F25A43;
 
-$button: $blue;
+// Brands
+$facebook: 		#438acb;
+$twitter: 		#5cbde9;
+
+// Elements
+$body: 			#fff;
+$button: 		$blue;
+$buttonHover:	lighten($blue, 10%);

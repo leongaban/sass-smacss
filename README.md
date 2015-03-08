@@ -67,6 +67,24 @@ stylesheets/
 @import "animation";
 ```
 
+<strong>Colors</strong>
+```
+// Primary
+$blue: 			#024562;
+$green: 		#249B7A;
+$orange: 		#FC913A;
+$red: 			#F25A43;
+
+// Brands
+$facebook: 		#438acb;
+$twitter: 		#5cbde9;
+
+// Elements
+$body: 			#fff;
+$button: 		$blue;
+$buttonHover:	lighten($blue, 10%);
+```
+
 <strong>Defaults.scss is where all main non-custom elements are set:</strong>
 
 ```
@@ -79,7 +97,7 @@ html, body { width: 100%; height: 100%; }
 body {
 	overflow-x: hidden;
     // font-family: 'Ubuntu', sans-serif; // <- choose your body font
-	font-weight: 300;
+	// font-weight: 300;
     font-size: em(16);
     color: #666;
 	background: $body;
