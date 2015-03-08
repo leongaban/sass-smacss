@@ -1,4 +1,4 @@
-# sass_smacss
+# sass-smacss
 SMACSS based SASS modules
 https://smacss.com/
 
