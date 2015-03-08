@@ -16,9 +16,10 @@ Master Stylesheet
 ============================================================
 
 stylesheets/
+|-- vendors/
+|   |-- _reset       	    	# Eric Meyer's reset v2.0.0
 |
 |-- modules/            	    # Partials
-|   |-- _reset       	    	# Eric Meyer's reset
 |   |-- _base           	    # Imports all the modules
 |   	|-- _animation      	    # CSS animations
 |   	|-- _colors         	    # Colors
@@ -38,7 +39,7 @@ stylesheets/
 |   |-- _svg					# For SVG background images
 |   |-- _queries				# Reponsive media queries
 |
-|-- vendors/            	    # 3rd party CSS
+|-- vendors/
 |   |-- _normalize      	    # Nicolas Gallagher v3.0.2
 |   ...
 |
@@ -46,7 +47,7 @@ stylesheets/
 */
 
 @import "vendors/normalize"; 	// Normalize stylesheet
-@import "modules/reset";		// Reset stylesheet
+@import "vendors/reset";		// Reset stylesheet
 @import "modules/base";			// Load base files
 @import "modules/defaults";		// Defaults elements
 @import "modules/inputs";		// Inputs & Selects

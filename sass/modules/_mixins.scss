@@ -14,6 +14,15 @@ $em-base: 16;
     @return ($pxval / $base) * 1em;
 }
 
+// @include clearfix;
+@mixin clearfix {
+    &:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
 // Disables cursor text selection
 @mixin noselect() {
     -webkit-touch-callout: none;
@@ -83,15 +92,6 @@ $em-base: 16;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-
-// @include clearfix;
-@mixin clearfix {
-    &:after {
-        content:"";
-        display:table;
-        clear:both;
-    }
 }
 
 // UtilityBelt - a starter kit for any SASS project
