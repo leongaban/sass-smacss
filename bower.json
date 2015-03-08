@@ -1,8 +1,9 @@
 {
   "name": "sass-smacss",
-  "version": "1.0.0",
+  "version": "v1.0.0",
   "description": "SMACSS based SASS modules for organized style writing",
   "homepage": "https://github.com/leongaban/sass-smacss",
+  "main": "sass/main_web.scss",
   "authors": [
     {
       "name": "Leon Gaban",
@@ -15,7 +16,6 @@
     "type": "git",
     "url": "https://github.com/leongaban/sass-smacss.git"
   },
-  "main": "sass/main_web.scss",
   "keywords": [
     "sass",
     "css",
@@ -25,9 +25,7 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower.json",
+    "bower_components"
   ]
 }
