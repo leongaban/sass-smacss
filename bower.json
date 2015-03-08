@@ -24,8 +24,6 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
-    "bower.json",
-    "bower_components"
+    "**/.*"
   ]
 }
