@@ -7,7 +7,7 @@ https://smacss.com/
 SMACSS is a style guide for writing and organizing SASS modules.
 -----
 
-`sass > main_web.scss`
+Main sass module: `sass > main_web.scss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
 
