@@ -2,7 +2,7 @@
 ====================================================
 ==================================================== */
 
-.btn {
+%button {
     color: #fff;
     // font-weight: 600;
     text-shadow: 1px 1px #333;
@@ -12,13 +12,38 @@
     @include rounded(5px);
 
     &:hover {
-        border: 1px solid lighten($button, 30%);
-        background: lighten($button, 15%);
+        border: 1px solid lighten($buttonHover, 10%);
+        background: $buttonHover;
     }
 
     &:active { 
         text-shadow: 1px 1px #666;
         border: 1px solid darken(#6e6f72, 10%);
         background: lighten($button, 20%);
+    }
+}
+
+%twitter-background {
+    color: #fff;
+    background: $twitter;
+}
+
+%facebook-background {
+    color: #fff;
+    background: $facebook;
+}
+
+.btn {
+
+    // .btn--twitter
+    &--twitter {
+        @extend %button;
+        @extend %twitter-background;
+    }
+
+    // .btn--facebook
+    &--facebook {
+        @extend %button;
+        @extend %facebook-background;
     }
 }

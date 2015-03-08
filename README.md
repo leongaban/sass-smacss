@@ -4,7 +4,7 @@ https://smacss.com/
 
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
-### SMACSS is a style guide for writing and organizing SASS modules.
+#### SMACSS is a style guide for writing and organizing SASS modules.
 *******
 
 Main sass module: `sass > main_web.scss`
@@ -45,7 +45,6 @@ stylesheets/
 |
 `-- main_web				    # Primary Sass file
 */
-
 
 @import "vendors/normalize"; 	// Normalize stylesheet
 @import "modules/reset";		// Reset stylesheet
@@ -125,17 +124,15 @@ body {
 
 // Footer
 @import "../layouts/footer";
-
 ```
 
-<strong>Finally the styles for your svg or png background image file and media queries are setup.</strong>
+<strong>Finally the SVG or PNG and <i>media queries</i> modules.</strong>
 ```
-@import "modules/svg";			// Load SVG
-@import "modules/queries";		// Media Queries
+@import "modules/svg";		// Load SVG
+@import "modules/queries";	// Media Queries
 ```
 
-<strong>In the svg module it's recommended to just add the class name to svg file, and where ever that class is used (icons or layouts 
-etc...) set the height width and other properties.</strong>
+<strong>In the SVG module it's recommended to just add class names here, then whatever module that class is used in specifically, set the visual properties.</strong>
 
 ```
 // Profile | profile.scss
@@ -155,7 +152,7 @@ etc...) set the height width and other properties.</strong>
 }
 ```
 
-<strong>Example class using the SVG background image in an example profile.scss layout module:</strong>
+<strong>Class in seperate module using the SVG background image.</strong>
 ```
 .green_phone_icon {
 	float: left;
