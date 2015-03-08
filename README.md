@@ -1,6 +1,5 @@
 # sass-smacss
-SMACSS based SASS modules
-https://smacss.com/
+Scalable and modular architecture for CSS https://smacss.com/
 
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
@@ -12,19 +11,19 @@ Main sass module: `sass > main_web.scss`
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
 
 ```
-/*=================================================================
+/*==========================================================
 Master Stylesheet 
-===================================================================
+============================================================
 
 stylesheets/
 |
 |-- modules/            	    # Partials
-|   |-- _reset       	    	# Minimal reset
+|   |-- _reset       	    	# Eric Meyer's reset
 |   |-- _base           	    # Imports all the modules
 |   	|-- _animation      	    # CSS animations
 |   	|-- _colors         	    # Colors
 |   	|-- _fonts          	    # Fonts
-|   	|-- _mixins         	    # Imports all mixins & global vars
+|   	|-- _mixins         	    # Imports all mixins
 |
 |   |-- _defaults       	    # Global Defaults
 |   |-- _buttons         	    # Buttons styles
@@ -39,17 +38,17 @@ stylesheets/
 |   |-- _svg					# For SVG background images
 |   |-- _queries				# Reponsive media queries
 |
-|-- vendors/            	    # CSS or from other projects
-|   |-- _normalize      	    # http://necolas.github.io/normalize.css v3.0.2
+|-- vendors/            	    # 3rd party CSS
+|   |-- _normalize      	    # Nicolas Gallagher v3.0.2
 |   ...
 |
-`-- main_web				    # Primary Sass file
+`-- main_web				    # Primary Sass module
 */
 
 @import "vendors/normalize"; 	// Normalize stylesheet
 @import "modules/reset";		// Reset stylesheet
 @import "modules/base";			// Load base files
-@import "modules/defaults";		// Default elements
+@import "modules/defaults";		// Defaults elements
 @import "modules/inputs";		// Inputs & Selects
 @import "modules/buttons";		// Buttons
 @import "modules/layout";		// Load Layouts
@@ -73,6 +72,7 @@ $blue: 			#024562;
 $green: 		#249B7A;
 $orange: 		#FC913A;
 $red: 			#F25A43;
+$gray:			#454545;
 
 // Brands
 $facebook: 		#438acb;
