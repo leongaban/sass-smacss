@@ -2,7 +2,7 @@
 SMACSS based SASS modules
 https://smacss.com/
 
-![Jack](https://raw.githubusercontent.com/leongaban/github_images/master/sass-smacss-logo.png)
+![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
 ### SMACSS is a style guide for writing and organizing SASS modules.
 *******
