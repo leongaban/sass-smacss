@@ -137,17 +137,17 @@ body {
 
 ```
 // Profile | profile.scss
-.green_phone_icon,
-.remove_info,
-.dropdown_arrow,
+.green-phone-icon,
+.remove-info,
+.dropdown-arrow,
 
 // Reports | reports.scss
-.check_green,
-.check_red,
+.check-green,
+.check-red,
 .css-label,
 
 // Errors | alerts.scss
-.lost_man {
+.lost-man {
 	background-size: 1600px 1600px;
 	background-image: url(/static/img/dashboard/icons.svg), none;
 }
@@ -155,7 +155,7 @@ body {
 
 <strong>Class in seperate module using the SVG background image.</strong>
 ```
-.green_phone_icon {
+.green-phone-icon {
 	float: left;
 	width: 24px;
 	height: 24px;
