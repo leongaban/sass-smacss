@@ -133,7 +133,7 @@ body {
 @import "modules/queries";	// Media Queries
 ```
 
-<strong>In the SVG module it's recommended to just add class names here, then whatever module that class is used in specifically, set the visual properties.</strong>
+<strong>In the SVG module it's recommended to just add class names here, then in the modules where those classes are used, set the visual properties.</strong>
 
 ```
 // Profile | profile.scss
