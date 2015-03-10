@@ -8,7 +8,7 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 
 Use with <a href="http://bower.io">Bower</a> `$ bower install sass-smacss`
 
-Main sass module: `sass > main_web.scss`
+Main sass module: `bower_components > sass-smacss > sass > main_web.scss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
 
