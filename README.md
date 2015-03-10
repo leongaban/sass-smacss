@@ -6,6 +6,8 @@ Scalable and modular architecture for CSS https://smacss.com/
 #### SMACSS is a style guide for writing and organizing SASS modules.
 *******
 
+Use with <a href="http://bower.io">Bower</a> `$ bower install sass-smacss`
+
 Main sass module: `sass > main_web.scss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
