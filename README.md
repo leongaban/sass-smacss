@@ -89,7 +89,6 @@ $buttonHover:	lighten($blue, 10%);
 
 ```
 /* Start of styles | Defaults
-====================================================
 ==================================================== */
 
 html, body { width: 100%; height: 100%; } 
@@ -115,7 +114,6 @@ body {
 <strong>Next comes the layout module which starts importing your layouts:</strong>
 ```
 /* Layouts
-====================================================
 ==================================================== */
 
 // Header
