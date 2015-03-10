@@ -4,7 +4,7 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
 #### SMACSS is a style guide for writing and organizing SASS modules.
-<p>SASS is the only way to write CSS, and SMACSS is the best way to organize your SASS</p>
+<p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
 
 Use with <a href="http://bower.io">Bower</a> `$ bower install sass-smacss`
