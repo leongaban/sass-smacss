@@ -164,3 +164,56 @@ body {
 	background-position: -50px -150px;
 }
 ```
+
+<strong>Added custom mixin function for creating multiple colored items</strong>
+```
+/*
+    Custom mixin | colored-tag
+    usage:
+
+    .tag {
+        border: 1px solid $gray_light;
+        background: $gray_bg;
+        @include transition(all, .2s, ease-out);
+
+        &.blue1 { @include colored-tag($blue1) }
+        &.blue2 { @include colored-tag($blue2) }
+        &.blue3 { @include colored-tag($blue3) }
+    }
+
+ */
+
+@mixin colored-tag($kolor) {
+    border: 1px solid $kolor;
+    background: $kolor;
+
+    @if $kolor == $yellow {
+        color: $gray4;
+        &:hover {
+            border: 1px solid $kolor !important;
+            background: lighten($kolor, 20%) !important;
+        }
+    } @else if $kolor == $gold {
+        color: $gray4;
+        &:hover {
+            border: 1px solid $kolor !important;
+            background: lighten($kolor, 20%) !important;
+        }
+    } @else if $kolor == $orange {
+        color: $gray4;
+        &:hover {
+            border: 1px solid $kolor !important;
+            background: lighten($kolor, 20%) !important;
+        }
+    } @else {
+        color: #fff;
+        &:hover {
+            // color: $gray4;
+            border: 1px solid $kolor !important;
+            background: lighten($kolor, 10%) !important;
+        }
+    }
+}
+```
+
+
