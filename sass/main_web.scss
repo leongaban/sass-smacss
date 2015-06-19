@@ -4,41 +4,41 @@ Master Stylesheet
 
 stylesheets/
 |-- vendors/
-|   |-- reset       	    	# Eric Meyer's reset v2.0.0
+|   |-- reset                   # Eric Meyer's reset v2.0.0
 |
-|-- modules/            	    # Partials
-|   |-- _base           	    # Imports all the modules
-|   	|-- _animation      	    # CSS animations
-|   	|-- _colors         	    # Colors
-|   	|-- _fonts          	    # Fonts
-|   	|-- _mixins         	    # Imports all mixins
+|-- modules/                    # Partials
+|   |-- _base                   # Imports all the modules
+|       |-- _animation              # CSS animations
+|       |-- _colors                 # Colors
+|       |-- _fonts                  # Fonts
+|       |-- _mixins                 # Imports all mixins
 |
-|   |-- _defaults       	    # Global Defaults
-|   |-- _buttons         	    # Buttons styles
-|   |-- _fonts         	    	# Fonts styles
-|   |-- _inputs          	    # Inputs styles
-|   |-- _layout         	    # Layout Views
-|   	|-- header
-|   	|-- home
-|   	|-- footer
-|   	...
+|   |-- _defaults               # Global Defaults
+|   |-- _buttons                # Buttons styles
+|   |-- _fonts                  # Fonts styles
+|   |-- _inputs                 # Inputs styles
+|   |-- _layout                 # Layout Views
+|       |-- header
+|       |-- home
+|       |-- footer
+|       ...
 |
-|   |-- _svg					# SVG background images
-|   |-- _queries				# Reponsive media queries
+|   |-- _svg                    # SVG background images
+|   |-- _queries                # Reponsive media queries
 |
 |-- vendors/
-|   |-- normalize      	    	# Nicolas Gallagher v3.0.2
+|   |-- normalize               # Nicolas Gallagher v3.0.2
 |   ...
 |
-`-- main_web				    # Primary Sass module
+`-- main_web                    # Primary Sass module
 */
 
-@import "vendors/normalize"; 	// Normalize stylesheet
-@import "vendors/reset";		// Reset stylesheet
-@import "modules/base";			// Load base files
-@import "modules/defaults";		// Defaults elements
-@import "modules/inputs";		// Inputs & Selects
-@import "modules/buttons";		// Buttons
-@import "modules/layout";		// Load Layouts
-@import "modules/svg";			// Load SVG
-@import "modules/queries";		// Media Queries
+@import "vendors/normalize";    // Normalize stylesheet
+@import "vendors/reset";        // Reset stylesheet
+@import "modules/base";         // Load base files
+@import "modules/defaults";     // Defaults elements
+@import "modules/inputs";       // Inputs & Selects
+@import "modules/buttons";      // Buttons
+@import "modules/layout";       // Load Layouts
+@import "modules/svg";          // Load SVG
+@import "modules/queries";      // Media Queries
