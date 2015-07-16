@@ -222,4 +222,6 @@ body {
 }
 ```
 
+Want to support? Use ฿itcoin! :) https://www.coinbase.com/leongaban
+
 
