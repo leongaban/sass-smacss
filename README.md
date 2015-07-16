@@ -7,6 +7,12 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 <p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
 
+#### Steps to install
+
+Install Node (which comes with NPM) https://nodejs.org/
+
+Install Bower `npm install -g bower`
+
 Use with <a href="http://bower.io">Bower</a> `$ bower install sass-smacss`
 
 Main sass module: `bower_components > sass-smacss > sass > main_web.scss`
