@@ -9,11 +9,11 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 
 #### Steps to install
 
-Install Node (which comes with NPM) https://nodejs.org/
+Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
 
-Install Bower `npm install -g bower`
+Install <a href="http://bower.io">Bower</a>: `npm install -g bower`
 
-Use with <a href="http://bower.io">Bower</a> `$ bower install sass-smacss`
+Finally install sass-smacss with Bower: `$ bower install sass-smacss`
 
 Main sass module: `bower_components > sass-smacss > sass > main_web.scss`
 
