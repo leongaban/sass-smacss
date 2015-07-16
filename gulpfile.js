@@ -44,7 +44,6 @@ gulp.task('css', function() {
 /** Development watch */
 /** ------------------------------------------------------------------------- */
 gulp.task('watch', function() {
-
     gulp.watch('sass/**/*.scss', ['css']).on('change', function(file) {
         gutil.log(gutil.colors.cyan.bold('CSS updated' + ' (' + file.path + ')'));
     });
