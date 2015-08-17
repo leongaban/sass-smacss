@@ -8,7 +8,6 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 *******
 
 #### Steps to install
-
 Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
 
 Install <a href="http://bower.io">Bower</a>: `npm install -g bower`
