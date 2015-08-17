@@ -1,4 +1,4 @@
-# sass-smacss 0.1.3
+# sass-smacss 0.2.3
 Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
 
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
@@ -7,7 +7,7 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 <p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
 
-#### New in version 0.1.3
+#### New in version 0.2.3
 GulpFile added (gulpfile.js should be moved to the root of your project)
 
 #### Steps to install
