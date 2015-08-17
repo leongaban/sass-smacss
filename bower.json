@@ -5,12 +5,7 @@
   "homepage": "https://github.com/leongaban/sass-smacss",
   "main": "sass/main_web.scss",
   "authors": [
-    {
-      "name": "Leon Gaban",
-      "email": "leongaban@gmail.com",
-      "homepage": "http://leongaban.com",
-      "twitter": "@leongaban"
-    }
+    "[object Object]"
   ],
   "repository": {
     "type": "git",
@@ -24,6 +19,10 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ]
 }
