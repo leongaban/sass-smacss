@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 /**
  * @name Gulp taskrunner
- * @desc Gulp taskrunner for TickerTags.dashboard
+ * @desc Gulp taskrunner for starter SASS-SMACSS project
+ * @desc This should be moved to the root folder
  */
 
 var gulp          = require('gulp'),

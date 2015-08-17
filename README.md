@@ -1,4 +1,4 @@
-# sass-smacss 0.1.2
+# sass-smacss 0.1.3
 Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
 
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
@@ -6,6 +6,9 @@ Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.
 #### SMACSS is a style guide for writing and organizing SASS modules.
 <p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
+
+#### New in version 0.1.3
+GulpFile added (gulpfile.js should be moved to the root of your project)
 
 #### Steps to install
 Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
