@@ -1,4 +1,4 @@
-# sass-smacss
+# sass-smacss 0.1.2
 Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
 
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
