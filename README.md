@@ -1,16 +1,18 @@
 # sass-smacss 0.2.3
-Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
+By <a href="http://twitter.com/leongaban">@leongaban</a>
+
+### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
 
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
-#### SMACSS is a style guide for writing and organizing SASS modules.
+##### SMACSS is a style guide for writing and organizing SASS modules.
 <p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
 
-#### New in version 0.2.3
-GulpFile added (gulpfile.js should be moved to the root of your project)
+##### New in version 0.2.3
+<a href="http://gulpjs.com/">GulpFile</a> added (gulpfile.js should be moved to the root of your project)
 
-#### Steps to install
+##### Steps to install
 Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
 
 Install <a href="http://bower.io">Bower</a>: `npm install -g bower`
@@ -23,7 +25,7 @@ Main sass module: `bower_components > sass-smacss > sass > main_web.scss`
 
 ```
 /*==========================================================
-Master Stylesheet 
+Master Stylesheet
 ============================================================
 
 stylesheets/
@@ -102,7 +104,7 @@ $buttonHover:	lighten($blue, 10%);
 /* Start of styles | Defaults
 ==================================================== */
 
-html, body { width: 100%; height: 100%; } 
+html, body { width: 100%; height: 100%; }
 
 body {
 	overflow-x: hidden;
@@ -225,5 +227,3 @@ body {
 ```
 
 Want to support? Use ฿itcoin! :) https://www.coinbase.com/leongaban
-
-
