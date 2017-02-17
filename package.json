@@ -1,16 +1,16 @@
 {
-  "name": "MyProject",
-  "version": "0.2.3",
-  "description": "",
-  "main": "",
+  "name": "sass-smacss",
+  "version": "0.2.4",
+  "description": "A starter kit for SASS/SCSS projects",
+  "main": "main.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "sass"
+    "sass", "scss"
   ],
   "authors": [
-    "Name <email>"
+    "Leon Gaban @leongaban"
   ],
   "license": "ISC",
   "devDependencies": {

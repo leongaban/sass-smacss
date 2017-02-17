@@ -10,7 +10,7 @@ body {
     // font-weight: 300;
     font-size: em(16);
     color: #666;
-    background: $body;
+    background: $body; // from _colors
 }
 
 sup, sub {
