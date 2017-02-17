@@ -1,4 +1,4 @@
-# sass-smacss 0.2.3
+# sass-smacss 0.2.4
 By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
@@ -8,6 +8,9 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 ##### SMACSS is a style guide for writing and organizing SASS modules.
 <p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
+
+##### New in version 0.2.4
+Deprecated and obsolete HTML elements removed from reset, most default styles commented out.
 
 ##### New in version 0.2.3
 <a href="http://gulpjs.com/">GulpFile</a> added (gulpfile.js should be moved to the root of your project)
@@ -56,7 +59,7 @@ stylesheets/
 |   |-- _normalize      	    # Nicolas Gallagher v3.0.2
 |   ...
 |
-`-- main_web				    # Primary Sass module
+`-- main     				    # Primary Sass module
 */
 
 @import "vendors/normalize"; 	// Normalize stylesheet

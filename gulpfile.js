@@ -19,8 +19,7 @@ var gulp          = require('gulp'),
 
 // Log Errors
 ////////////////////////////////////////////////////////////////////////////////
-
-function errorlog(err){
+function errorlog(err) {
     console.log(err.message);
     this.emit('end');
 }
@@ -39,7 +38,7 @@ gulp.task('css', function() {
     .pipe(sourcemaps.init())
     .on('error', errorlog)
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('css/'));
 });
 
 /** Development watch */
