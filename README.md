@@ -9,10 +9,13 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 <p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
 *******
 
-##### New in version 0.2.4
+##### New in 0.2.5
+Renamed layouts to components to better reflect modern web app developement
+
+##### New in 0.2.4
 Deprecated and obsolete HTML elements removed from reset, most default styles commented out.
 
-##### New in version 0.2.3
+##### New in 0.2.3
 <a href="http://gulpjs.com/">GulpFile</a> added (gulpfile.js should be moved to the root of your project)
 
 ##### Steps to install
@@ -22,7 +25,7 @@ Install <a href="http://bower.io">Bower</a>: `npm install -g bower`
 
 Finally install sass-smacss with Bower: `$ bower install sass-smacss`
 
-Main sass module: `bower_components > sass-smacss > sass > main_web.scss`
+Main sass module: `bower_components > sass-smacss > sass > main.scss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
 
