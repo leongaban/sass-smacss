@@ -1,4 +1,4 @@
-# sass-smacss 0.2.4
+# sass-smacss 0.2.6
 By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
@@ -6,10 +6,8 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
 ##### SMACSS is a style guide for writing and organizing SASS modules.
-<p>SASS is a better way to write CSS, and SMACSS is the best way to organize.</p>
-*******
 
-##### New in 0.2.5
+##### New in 0.2.6
 Renamed layouts to components to better reflect modern web app developement
 
 ##### New in 0.2.4
