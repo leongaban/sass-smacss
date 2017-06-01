@@ -1,17 +1,15 @@
 {
   "name": "sass-smacss",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A starter kit for SASS/SCSS projects",
   "main": "main.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "sass", "scss"
+    "css", "sass", "scss", "smacss"
   ],
-  "authors": [
-    "Leon Gaban @leongaban"
-  ],
+  "author": "Leon Gaban @leongaban",
   "license": "ISC",
   "devDependencies": {
     "del": "^1.1.1",

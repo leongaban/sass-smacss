@@ -1,36 +1,36 @@
 /*==========================================================
-Master Stylesheet 0.2.4
+Master Stylesheet 0.2.5
 ============================================================
 
 stylesheets/
 |-- vendors/
-|   |-- reset                   # Eric Meyer's reset v2.0.0
+|   |-- reset # Eric Meyer's reset v2.0.0
 |
-|-- modules/                    # Partials
-|   |-- _base                   # Imports all the modules
-|       |-- _animation              # CSS animations
-|       |-- _colors                 # Colors
-|       |-- _fonts                  # Fonts
-|       |-- _mixins                 # Imports all mixins
+|-- modules/
+|   |-- _base
+|       |-- _animation
+|       |-- _colors
+|       |-- _fonts
+|       |-- _mixins
 |
-|   |-- _defaults               # Global Defaults
-|   |-- _buttons                # Buttons styles
-|   |-- _fonts                  # Fonts styles
-|   |-- _inputs                 # Inputs styles
-|   |-- _layout                 # Layout Views
+|   |-- _defaults
+|   |-- _buttons
+|   |-- _fonts
+|   |-- _inputs
+|   |-- _layout
 |       |-- header
 |       |-- home
 |       |-- footer
 |       ...
 |
-|   |-- _svg                    # SVG background images
-|   |-- _queries                # Reponsive media queries
+|   |-- _svg
+|   |-- _queries
 |
 |-- vendors/
-|   |-- normalize               # Nicolas Gallagher v3.0.2
+|   |-- normalize # Nicolas Gallagher v3.0.2
 |   ...
 |
-`-- main_web                    # Primary Sass module
+`-- main
 */
 
 @import "vendors/normalize";    // Normalize stylesheet

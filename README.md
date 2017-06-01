@@ -33,33 +33,33 @@ Master Stylesheet
 
 stylesheets/
 |-- vendors/
-|   |-- _reset       	    	# Eric Meyer's reset v2.0.0
+|   |-- _reset # Eric Meyer's reset v2.0.0
 |
-|-- modules/            	    # Partials
-|   |-- _base           	    # Imports all the modules
-|   	|-- _animation      	    # CSS animations
-|   	|-- _colors         	    # Colors
-|   	|-- _fonts          	    # Fonts
-|   	|-- _mixins         	    # Imports all mixins
+|-- modules/
+|   |-- _base # Imports all the modules
+|   	|-- _animation
+|   	|-- _colors
+|   	|-- _fonts
+|   	|-- _mixins
 |
-|   |-- _defaults       	    # Global Defaults
-|   |-- _buttons         	    # Buttons styles
-|   |-- _fonts         	    	# Fonts styles
-|   |-- _inputs          	    # Inputs styles
-|   |-- _layout         	    # Layout Views
+|   |-- _defaults
+|   |-- _buttons
+|   |-- _fonts
+|   |-- _inputs
+|   |-- _layout
 |   	|-- header
 |   	|-- home
 |   	|-- footer
 |   	...
 |
-|   |-- _svg					# For SVG background images
-|   |-- _queries				# Reponsive media queries
+|   |-- _svg
+|   |-- _queries
 |
 |-- vendors/
-|   |-- _normalize      	    # Nicolas Gallagher v3.0.2
+|   |-- _normalize # Nicolas Gallagher v3.0.2
 |   ...
 |
-`-- main     				    # Primary Sass module
+`-- main
 */
 
 @import "vendors/normalize"; 	// Normalize stylesheet
@@ -111,10 +111,10 @@ html, body { width: 100%; height: 100%; }
 
 body {
 	overflow-x: hidden;
-    // font-family: 'Ubuntu', sans-serif; // <- choose your body font
+  // font-family: 'Ubuntu', sans-serif; // <- choose your body font
 	// font-weight: 300;
-    font-size: em(16);
-    color: #666;
+  font-size: em(16);
+  color: #666;
 	background: $body;
 }
 
@@ -143,8 +143,8 @@ body {
 
 <strong>Finally the SVG or PNG and <i>media queries</i> modules.</strong>
 ```
-@import "modules/svg";		// Load SVG
-@import "modules/queries";	// Media Queries
+@import "modules/svg";
+@import "modules/queries";
 ```
 
 <strong>In the SVG module it's recommended to just add class names here, then in the modules where those classes are used, set the visual properties.</strong>
@@ -162,19 +162,19 @@ body {
 
 // Errors | alerts.scss
 .lost-man {
-	background-size: 1600px 1600px;
-	background-image: url(/static/img/dashboard/icons.svg), none;
+  background-size: 1600px 1600px;
+  background-image: url(/static/img/dashboard/icons.svg), none;
 }
 ```
 
 <strong>Class in seperate module using the SVG background image.</strong>
 ```
 .green-phone-icon {
-	float: left;
-	width: 24px;
-	height: 24px;
-	margin: 5px 10px;
-	background-position: -50px -150px;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 5px 10px;
+  background-position: -50px -150px;
 }
 ```
 
