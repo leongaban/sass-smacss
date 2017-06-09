@@ -1,20 +1,20 @@
 {
   "name": "sass-smacss",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A starter kit for SASS/SCSS projects",
   "main": "main.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
-    "css", "sass", "scss", "smacss"
+    "css",
+    "sass",
+    "scss",
+    "smacss"
   ],
   "author": "Leon Gaban @leongaban",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "del": "^1.1.1",
     "event-stream": "^3.3.0",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.7.0",
     "gulp-cachebust": "0.0.5",
     "gulp-concat": "^2.5.2",

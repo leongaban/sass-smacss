@@ -1,5 +1,5 @@
 /*==========================================================
-Master Stylesheet 0.2.5
+Master Stylesheet 0.2.6
 ============================================================
 
 stylesheets/
@@ -21,7 +21,6 @@ stylesheets/
 |       |-- header
 |       |-- home
 |       |-- footer
-|       ...
 |
 |   |-- _svg
 |   |-- _queries
@@ -39,6 +38,6 @@ stylesheets/
 @import "modules/defaults";     // Defaults elements
 @import "modules/inputs";       // Inputs & Selects
 @import "modules/buttons";      // Buttons
-@import "modules/layout";       // Load Layouts
+@import "modules/components";   // Load Components
 @import "modules/svg";          // Load SVG
 @import "modules/queries";      // Media Queries
