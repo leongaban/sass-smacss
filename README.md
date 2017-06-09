@@ -1,4 +1,4 @@
-# sass-smacss 0.2.6
+# sass-smacss 0.2.7
 By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
@@ -6,15 +6,6 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 ![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
 
 ##### SMACSS is a style guide for writing and organizing SASS modules.
-
-##### New in 0.2.6
-Renamed layouts to components to better reflect modern web app developement
-
-##### New in 0.2.4
-Deprecated and obsolete HTML elements removed from reset, most default styles commented out.
-
-##### New in 0.2.3
-<a href="http://gulpjs.com/">GulpFile</a> added (gulpfile.js should be moved to the root of your project)
 
 ##### Steps to install
 Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
@@ -63,15 +54,15 @@ stylesheets/
 `-- main
 */
 
-@import "vendors/normalize"; 	// Normalize stylesheet
-@import "vendors/reset";		// Reset stylesheet
-@import "modules/base";			// Load base files
-@import "modules/defaults";		// Defaults elements
-@import "modules/inputs";		// Inputs & Selects
-@import "modules/buttons";		// Buttons
-@import "modules/layout";		// Load Layouts
-@import "modules/svg";			// Load SVG
-@import "modules/queries";		// Media Queries
+@import "vendors/normalize";
+@import "vendors/reset";
+@import "modules/base";
+@import "modules/defaults";
+@import "modules/inputs";
+@import "modules/buttons";
+@import "modules/components";
+@import "modules/svg";
+@import "modules/queries";
 ```
 
 <strong>Next are the normalize and reset modules. Base module imports the mixins, colors and other less frequently updated settings/modules:</strong>
@@ -93,8 +84,8 @@ $red: 			#F25A43;
 $gray:			#454545;
 
 // Brands
-$facebook: 		#438acb;
-$twitter: 		#5cbde9;
+$facebook: 	#438acb;
+$twitter: 	#5cbde9;
 
 // Elements
 $body: 			#fff;
@@ -107,7 +98,6 @@ $buttonHover:	lighten($blue, 10%);
 ```
 /* Start of styles | Defaults
 ==================================================== */
-
 html, body { width: 100%; height: 100%; }
 
 body {
@@ -229,5 +219,3 @@ body {
     }
 }
 ```
-
-Want to support? Use ฿itcoin! :) https://www.coinbase.com/leongaban
