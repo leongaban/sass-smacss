@@ -1,5 +1,5 @@
 
-# sass-smacss 1.0.0
+# sass-smacss 1.0.1
 By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
@@ -20,12 +20,12 @@ Main sass module: `bower_components > sass-smacss > sass > main.scss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
 
-#### New in version 1.0.0
+#### New in version 1.0.1
 
 - sass-lint.yml added
 - Gulp file removed
 - input.scss removed
-- comments removed and lint errors fixed
+- comments removed, lint errors fixed and clean up
 
 ```
 /*==========================================================
@@ -40,14 +40,12 @@ stylesheets/
 | |-- _base # Imports all the modules
 |  |-- _animation
 |  |-- _colors
-|  |-- _components < all component styles should be added into /components and imported here.
 |  |-- _fonts
 |  |-- _mixins
 |
 | |-- _defaults
 | |-- _buttons
 | |-- _fonts
-| |-- _inputs
 | |-- _components
 |  ...
 |
@@ -74,14 +72,11 @@ stylesheets/
 
 <strong>Next are the normalize and reset modules. Base module imports the mixins, colors and other less frequently updated settings/modules:</strong>
 
-<strong>All React / Angular components should have their own folder inside of /components and imported in the component module.</strong>
-
 ```
 @import 'mixins';
 @import 'colors';
 @import 'fonts';
 @import 'animation';
-@import 'components';
 ```
 
 <strong>Colors</strong>
