@@ -1,5 +1,5 @@
 
-# sass-smacss 1.0.1
+# sass-smacss 1.0.2
 By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
@@ -21,7 +21,7 @@ Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https:
 
 Main sass module: `bower_components > sass-smacss > sass > main.scss`
 
-#### New in version 1.0.1
+#### New in version 1.0.2
 
 - sass-lint.yml added
 - Gulp file removed
