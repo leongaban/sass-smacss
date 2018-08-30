@@ -24,3 +24,6 @@ a {
 }
 
 canvas { display: block; vertical-align: bottom; }
+
+// removes chrome input highlight
+*:focus { outline: 0; }

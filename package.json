@@ -1,6 +1,6 @@
 {
   "name": "sass-smacss",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A starter kit for SASS/SCSS projects",
   "main": "main.scss",
   "keywords": [

@@ -1,33 +1,25 @@
 /*==========================================================
-Master Stylesheet 0.3.0
+Master Stylesheet
 ============================================================
 
 stylesheets/
 |-- vendors/
 |   |-- reset # Eric Meyer's reset v2.0.0
+|   |-- normalize # Nicolas Gallagher v3.0.2
 |
 |-- modules/
 |   |-- _base
-|       |-- _animation
-|       |-- _colors
-|       |-- _fonts
-|       |-- _mixins
+|     |-- _mixins
+|     |-- _animation
+|     |-- _colors
+|     |-- _fonts
 |
 |   |-- _defaults
 |   |-- _buttons
-|   |-- _fonts
-|   |-- _inputs
-|   |-- _layout
-|       |-- header
-|       |-- home
-|       |-- footer
+|   |-- _components
 |
 |   |-- _svg
 |   |-- _queries
-|
-|-- vendors/
-|   |-- normalize # Nicolas Gallagher v3.0.2
-|   ...
 |
 `-- main
 */
@@ -36,7 +28,6 @@ stylesheets/
 @import 'vendors/reset';        // Reset stylesheet
 @import 'modules/base';         // Load base files
 @import 'modules/defaults';     // Defaults elements
-@import 'modules/inputs';       // Inputs & Selects
 @import 'modules/buttons';      // Buttons
 @import 'modules/components';   // Load Components
 @import 'modules/svg';          // Load SVG
