@@ -4,7 +4,7 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
 
-![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/bower-jack-sass.png)
+![Bower, SMACSS, SASS](https://raw.githubusercontent.com/leongaban/github_images/master/sass-smacss-logo.png)
 
 ##### SMACSS is a style guide for writing and organizing SASS modules.
 
