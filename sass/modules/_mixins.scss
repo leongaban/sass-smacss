@@ -3,143 +3,139 @@
 // if the parent is another value say 24px write em(12, 24)
 
 /*
-    Custom mixin | colored-tag
-    usage:
+  Custom Advanced Example mixin | colored-tag
+  usage:
 
-    .tag {
-        border: 1px solid $gray_light;
-        background: $gray_bg;
-        @include transition(all, .2s, ease-out);
+  .tag {
+    border: 1px solid $gray_light;
+    background: $gray_bg;
+    @include transition(all, .2s, ease-out);
 
-        &.blue1 { @include colored-tag($blue1) }
-        &.blue2 { @include colored-tag($blue2) }
-        &.blue3 { @include colored-tag($blue3) }
-    }
-
+    &.blue1 { @include colored-tag($blue1) }
+    &.blue2 { @include colored-tag($blue2) }
+    &.blue3 { @include colored-tag($blue3) }
+  }
  */
 
-@mixin colored-tag($kolor) {
-    border: 1px solid $kolor;
-    background: $kolor;
-
-    @if $kolor == $yellow {
-        color: $gray4;
-        &:hover {
-            border: 1px solid $kolor !important;
-            background: lighten($kolor, 20%) !important;
-        }
-    } @else if $kolor == $gold {
-        color: $gray4;
-        &:hover {
-            border: 1px solid $kolor !important;
-            background: lighten($kolor, 20%) !important;
-        }
-    } @else if $kolor == $orange {
-        color: $gray4;
-        &:hover {
-            border: 1px solid $kolor !important;
-            background: lighten($kolor, 20%) !important;
-        }
-    } @else {
-        color: #fff;
-        &:hover {
-            // color: $gray4;
-            border: 1px solid $kolor !important;
-            background: lighten($kolor, 10%) !important;
-        }
-    }
-}
+// @mixin colored-tag($kolor) {
+//   border: 1px solid $kolor;
+//   background: $kolor;
+//
+//   @if $kolor == $yellow {
+//     color: $gray4;
+//     &:hover {
+//       border: 1px solid $kolor !important;
+//       background: lighten($kolor, 20%) !important;
+//     }
+//   } @else if $kolor == $gold {
+//     color: $gray4;
+//     &:hover {
+//       border: 1px solid $kolor !important;
+//       background: lighten($kolor, 20%) !important;
+//     }
+//   } @else if $kolor == $orange {
+//     color: $gray4;
+//     &:hover {
+//       border: 1px solid $kolor !important;
+//       background: lighten($kolor, 20%) !important;
+//     }
+//   } @else {
+//     color: #fff;
+//     &:hover {
+//       border: 1px solid $kolor !important;
+//       background: lighten($kolor, 10%) !important;
+//     }
+//   }
+// }
 
 // @include em(12);
 $em-base: 16;
 @function em($pxval, $base: $em-base) {
-    @if not unitless($pxval) {
-        $pxval: strip-units($pxval);
-    }
-    @if not unitless($base) {
-        $base: strip-units($base);
-    }
-    @return ($pxval / $base) * 1em;
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
 }
 
 // @include clearfix;
 @mixin clearfix {
-    &:after {
-        content:"";
-        display:table;
-        clear:both;
-    }
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 // Disables cursor text selection
-@mixin noselect() {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 // CSS3 filters
 // http://css-tricks.com/almanac/properties/f/filter/
 @mixin filter($function: none) {
-    // <filter-function> [<filter-function]* | none
-    @include prefixer(filter, $function, webkit spec);
+  // <filter-function> [<filter-function]* | none
+  @include prefixer(filter, $function, webkit spec);
 }
 
 // @include transition(background, .2s, ease-in-out);
 @mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
+  -webkit-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
 }
 
 // @include text-shadow(2px, 2px, #000);
 @mixin text-shadow($x, $y, $value) {
-    text-shadow: $x $y $value;
+  text-shadow: $x $y $value;
 }
 
 // @include box-shadow(0 5px 15px rgba(50, 50, 50, 0.2));
 @mixin box-shadow($value) {
-    -webkit-box-shadow: $value;
-    box-shadow: $value;
+  -webkit-box-shadow: $value;
+  box-shadow: $value;
 }
 
 // @include rounded(4px);
 @mixin rounded($radius: 10px) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
 }
 
 // @include circle(width);
 @mixin circle($width) {
-    border-radius: 50%;
-    width: $width;
-    height: $width;
+  border-radius: 50%;
+  width: $width;
+  height: $width;
 }
 
 // @include bgcover;
-@mixin bgcover() {
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+@mixin bgcover {
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 // @include opacity(0);
-@mixin opacity($decimal,$whole) {
-    opacity: $decimal;
-    filter: alpha(opacity=$whole);
+@mixin opacity($decimal, $whole) {
+  opacity: $decimal;
+  filter: alpha(opacity=$whole);
 }
 
 // @include vertical-align;
 @mixin vertical-align {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 // UtilityBelt - a starter kit for any SASS project
@@ -150,41 +146,40 @@ $em-base: 16;
 // @include triangle(down, size, color)
 // $direction: up, down, left, right
 @mixin triangle($direction, $size: 8px, $color: #222) {
-    content: '';
-    display: block;
-    // position: absolute;
-    height: 0; width: 0;
-    @if ($direction == 'up') {
-        border-bottom: $size solid $color;
-        border-left: $size solid transparent;
-        border-right: $size solid transparent;
-    }
-    @else if ($direction == 'down') {
-        border-top: $size solid $color;
-        border-left: $size solid transparent;
-        border-right: $size solid transparent;
-    }
-    @else if ($direction == 'left') {
-        border-top: $size solid transparent;
-        border-bottom: $size solid transparent;
-        border-right: $size solid $color;
-    }
-    @else if ($direction == 'right') {
-        border-top: $size solid transparent;
-        border-bottom: $size solid transparent;
-        border-left: $size solid $color;
-    }
+  content: '';
+  display: block;
+  height: 0; width: 0;
+  @if ($direction == 'up') {
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'down') {
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'left') {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+  @else if ($direction == 'right') {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
 }
 
 //@include linear-gradient(color, color);
 @mixin linear-gradient($fromColor, $toColor) {
-    background-color: $toColor;
-    background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor));
-    background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
-    background-image:    -moz-linear-gradient(top, $fromColor, $toColor);
-    background-image:     -ms-linear-gradient(top, $fromColor, $toColor);
-    background-image:         linear-gradient(top, $fromColor, $toColor);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+  background-color: $toColor;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor));
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor);
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor);
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
 // CSS diagonal stripes

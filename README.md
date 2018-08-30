@@ -1,4 +1,5 @@
-# sass-smacss 0.2.7
+
+# sass-smacss 0.3.0
 By <a href="http://twitter.com/leongaban">@leongaban</a>
 
 ### Scalable and modular architecture for CSS https://smacss.com | http://sass-lang.com
@@ -10,6 +11,7 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 ##### Steps to install
 Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
 
+#### Bower.io
 Install <a href="http://bower.io">Bower</a>: `npm install -g bower`
 
 Finally install sass-smacss with Bower: `$ bower install sass-smacss`
@@ -17,6 +19,12 @@ Finally install sass-smacss with Bower: `$ bower install sass-smacss`
 Main sass module: `bower_components > sass-smacss > sass > main.scss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
+
+#### New in version 0.3.0
+
+- Gulp file removed
+- sass-lint.yml added
+- comments removed and lint errors fixed
 
 ```
 /*==========================================================
@@ -31,6 +39,7 @@ stylesheets/
 |   |-- _base # Imports all the modules
 |   	|-- _animation
 |   	|-- _colors
+|   	|-- _components < all component styles should be added into /components and imported here.
 |   	|-- _fonts
 |   	|-- _mixins
 |
@@ -38,10 +47,7 @@ stylesheets/
 |   |-- _buttons
 |   |-- _fonts
 |   |-- _inputs
-|   |-- _layout
-|   	|-- header
-|   	|-- home
-|   	|-- footer
+|   |-- _components
 |   	...
 |
 |   |-- _svg
@@ -67,21 +73,25 @@ stylesheets/
 
 <strong>Next are the normalize and reset modules. Base module imports the mixins, colors and other less frequently updated settings/modules:</strong>
 
+<strong>All React / Angular components should have their own folder inside of /components and imported in the component module.</strong>
+
 ```
-@import "mixins";
-@import "colors";
-@import "fonts";
-@import "animation";
+@import 'mixins';
+@import 'colors';
+@import 'fonts';
+@import 'animation';
+@import 'components';
 ```
 
 <strong>Colors</strong>
+
+Example:
+
 ```
 // Primary
 $blue: 			#024562;
 $green: 		#249B7A;
-$orange: 		#FC913A;
 $red: 			#F25A43;
-$gray:			#454545;
 
 // Brands
 $facebook: 	#438acb;
@@ -93,7 +103,7 @@ $button: 		$blue;
 $buttonHover:	lighten($blue, 10%);
 ```
 
-<strong>Defaults.scss is where all main non-custom elements are set:</strong>
+<strong>defaults.scss is where all main non-custom elements are set:</strong>
 
 ```
 /* Start of styles | Defaults
@@ -169,7 +179,7 @@ body {
 }
 ```
 
-<strong>Added custom mixin function for creating multiple colored items</strong>
+<strong>Added example of custom mixin function for creating multiple colored items</strong>
 ```
 /*
     Custom mixin | colored-tag
