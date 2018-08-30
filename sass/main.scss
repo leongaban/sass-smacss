@@ -32,12 +32,12 @@ stylesheets/
 `-- main
 */
 
-@import "vendors/normalize";    // Normalize stylesheet
-@import "vendors/reset";        // Reset stylesheet
-@import "modules/base";         // Load base files
-@import "modules/defaults";     // Defaults elements
-@import "modules/inputs";       // Inputs & Selects
-@import "modules/buttons";      // Buttons
-@import "modules/components";   // Load Components
-@import "modules/svg";          // Load SVG
-@import "modules/queries";      // Media Queries
+@import 'vendors/normalize';    // Normalize stylesheet
+@import 'vendors/reset';        // Reset stylesheet
+@import 'modules/base';         // Load base files
+@import 'modules/defaults';     // Defaults elements
+@import 'modules/inputs';       // Inputs & Selects
+@import 'modules/buttons';      // Buttons
+@import 'modules/components';   // Load Components
+@import 'modules/svg';          // Load SVG
+@import 'modules/queries';      // Media Queries
