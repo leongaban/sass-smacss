@@ -9,7 +9,7 @@
     "scss",
     "smacss"
   ],
-  "author": "Leon Gaban @leongaban",
+  "author": "Leon Gaban <leongaban@gmail.com> (https://leongaban.com)",
   "license": "MIT",
   "dependencies": {
     "sass-lint": "^1.12.1"

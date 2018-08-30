@@ -11,14 +11,15 @@ By <a href="http://twitter.com/leongaban">@leongaban</a>
 ##### Steps to install
 Install <a href="https://nodejs.org/">Node</a> (which comes with <a href="https://www.npmjs.com/">NPM</a>): https://nodejs.org/
 
+#### NPM
+`$ npm i sass-smacss`
+
 #### Bower.io
-Install <a href="http://bower.io">Bower</a>: `npm install -g bower`
-
-Finally install sass-smacss with Bower: `$ bower install sass-smacss`
-
-Main sass module: `bower_components > sass-smacss > sass > main.scss`
+`$ bower install sass-smacss`
 
 <strong>The layout tree below, the module layouts imports all sectional styles from the layouts folder:</strong>
+
+Main sass module: `bower_components > sass-smacss > sass > main.scss`
 
 #### New in version 1.0.1
 
